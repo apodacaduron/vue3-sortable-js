@@ -92,7 +92,7 @@ if (!argv.format || argv.format === 'es') {
     input: 'src/entry.esm.ts',
     external,
     output: {
-      file: 'dist/vue-sortablejs.esm.js',
+      file: 'dist/vue-sortable-js.esm.js',
       format: 'esm',
       exports: 'named',
     },
@@ -131,7 +131,7 @@ if (!argv.format || argv.format === 'cjs') {
     external,
     output: {
       compact: true,
-      file: 'dist/vue-sortablejs.ssr.js',
+      file: 'dist/vue-sortable-jss.ssr.js',
       format: 'cjs',
       name: 'VueSortablejs',
       exports: 'auto',
@@ -154,7 +154,7 @@ if (!argv.format || argv.format === 'iife') {
     external,
     output: {
       compact: true,
-      file: 'dist/vue-sortablejs.min.js',
+      file: 'dist/vue-sortable-jss.min.js',
       format: 'iife',
       name: 'VueSortablejs',
       exports: 'auto',

@@ -16,7 +16,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-import VueSortablejs from "@/vue-sortablejs.vue";
+import VueSortablejs from "@/vue-sortable-js.vue";
 
 export default defineComponent({
   components: {

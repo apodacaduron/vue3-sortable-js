@@ -1,11 +1,11 @@
 {
-  "name": "vue-sortablejs",
+  "name": "vue3-sortable-js",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/vue-sortablejs.ssr.js",
-  "browser": "dist/vue-sortablejs.esm.js",
-  "module": "dist/vue-sortablejs.esm.js",
-  "unpkg": "dist/vue-sortablejs.min.js",
+  "main": "dist/vue-sortable-js.ssr.js",
+  "browser": "dist/vue-sortable-js.esm.js",
+  "module": "dist/vue-sortable-js.esm.js",
+  "unpkg": "dist/vue-sortable-js.min.js",
   "types": "dist/types/src/entry.esm.d.ts",
   "files": [
     "dist/*",

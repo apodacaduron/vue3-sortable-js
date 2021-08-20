@@ -1,1 +1,1 @@
-# vue-sortablejs
+# vue-sortable-js

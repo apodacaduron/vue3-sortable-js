@@ -13,7 +13,7 @@ import Sortable, { Swap, MultiDrag } from "sortablejs";
 Sortable.mount(new Swap(), new MultiDrag());
 
 export default defineComponent({
-  name: "Draggable",
+  name: "VueSortableJs",
   inheritAttrs: false,
   props: {
     containerClass: {

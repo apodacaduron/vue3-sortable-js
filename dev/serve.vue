@@ -6,7 +6,7 @@
         src="http://sortablejs.github.io/Sortable/st/og-image.png"
         alt="logo"
       />
-      <h1>Vue-SortableJs Features</h1>
+      <h1>Vue-Sortable-Js Features</h1>
       <SimpleList />
       <SharedLists />
     </div>
@@ -15,14 +15,14 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import VueSortablejs from "@/vue-sortablejs.vue";
+import VueSortableJs from "@/vue-sortable-js.vue";
 import SimpleList from "./simple-list/SimpleList.vue";
 import SharedLists from "./shared-lists/SharedLists.vue";
 
 export default defineComponent({
   name: "ServeDev",
   components: {
-    VueSortablejs,
+    VueSortableJs,
     SimpleList,
     SharedLists,
   },
