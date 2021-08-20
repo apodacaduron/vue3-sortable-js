@@ -3,19 +3,19 @@
   <h2>Shared lists</h2>
   <div class="shared-list-container">
     <div class="list">
-      <VueSortablejs v-model:list="demoList" :options="sortableOptions">
+      <VueSortableJs v-model:list="demoList" :options="sortableOptions">
         <template #item="{ element, index }">
           <div class="list-item">{{ element }} {{ index }}</div>
         </template>
-      </VueSortablejs>
+      </VueSortableJs>
     </div>
 
     <div class="list">
-      <VueSortablejs v-model:list="demoList" :options="sortableOptions">
+      <VueSortableJs v-model:list="demoList" :options="sortableOptions">
         <template #item="{ element, index }">
           <div class="list-item-shared">{{ element }} {{ index }}</div>
         </template>
-      </VueSortablejs>
+      </VueSortableJs>
     </div>
   </div>
 
@@ -27,11 +27,11 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-import VueSortablejs from "@/vue-sortable-js.vue";
+import VueSortableJs from "@/vue-sortable-js.vue";
 
 export default defineComponent({
   components: {
-    VueSortablejs,
+    VueSortableJs,
   },
   setup() {
     const demoList = ref(["Vue", "Sortable", "Plugin"]);
@@ -42,21 +42,21 @@ export default defineComponent({
     });
 
     const code = `
-        <VueSortablejs v-model:list="demoList" :options="sortableOptions">
+        <VueSortableJs v-model:list="demoList" :options="sortableOptions">
           <template #item="{ element, index }">
             <div class="list-item">{{ element }} {{ index }}</div>
           </template>
-        </VueSortablejs>
+        </VueSortableJs>
 
-        <VueSortablejs v-model:list="demoList" :options="sortableOptions">
+        <VueSortableJs v-model:list="demoList" :options="sortableOptions">
           <template #item="{ element, index }">
             <div class="list-item-shared">{{ element }} {{ index }}</div>
           </template>
-        </VueSortablejs>
+        </VueSortableJs>
         
         export default {
           components: {
-            VueSortablejs,
+            VueSortableJs,
           },
           setup() {
             const demoList = ref(["Vue", "Sortable", "Plugin"]);
