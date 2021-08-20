@@ -2,11 +2,11 @@
   <hr />
   <h2>Simple list</h2>
   <div class="list">
-    <VueSortablejs v-model:list="demoList" :options="sortableOptions">
+    <VueSortableJs v-model:list="demoList" :options="sortableOptions">
       <template #item="{ element, index }">
         <div class="list-item">{{ element }} {{ index }}</div>
       </template>
-    </VueSortablejs>
+    </VueSortableJs>
   </div>
   <details>
     <summary>Show options</summary>
@@ -16,11 +16,11 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-import VueSortablejs from "@/vue-sortable-js.vue";
+import VueSortableJs from "@/vue-sortable-js.vue";
 
 export default defineComponent({
   components: {
-    VueSortablejs,
+    VueSortableJs,
   },
   setup() {
     const demoList = ref(["Vue", "Sortable", "Plugin"]);
@@ -30,15 +30,15 @@ export default defineComponent({
     });
 
     const code = `
-        <VueSortablejs v-model:list="demoList" :options="sortableOptions">
+        <VueSortableJs v-model:list="demoList" :options="sortableOptions">
           <template #item="{ element, index }">
             <div class="list-item">{{ element }} {{ index }}</div>
           </template>
-        </VueSortablejs>
+        </VueSortableJs>
         
         export default {
           components: {
-            VueSortablejs,
+            VueSortableJs,
           },
           setup() {
             const demoList = ref(["Vue", "Sortable", "Plugin"]);
