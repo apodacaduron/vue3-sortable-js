@@ -10,6 +10,7 @@ yarn add vue3-sortable-js
 ## Simple List
 <details>
   <summary>See more</summary>
+  
   ```vue
   <VueSortableJs v-model:list="demoList" :options="sortableOptions">
     <template #item="{ element, index }">
