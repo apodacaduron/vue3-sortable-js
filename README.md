@@ -1,4 +1,7 @@
 # vue-sortable-js
+[![npm version](https://badge.fury.io/js/vue3-sortable-js.svg)](https://badge.fury.io/js/vue3-sortable-js)
+
+This library is a wrapper for SortableJs ![](https://github.com/SortableJS/Sortable)
 
 ## Install
 ```bash
