@@ -42,33 +42,34 @@ export default defineComponent({
     });
 
     const code = `
-        <VueSortableJs v-model:list="demoList" :options="sortableOptions">
-          <template #item="{ element, index }">
-            <div class="list-item">{{ element }} {{ index }}</div>
-          </template>
-        </VueSortableJs>
+      <VueSortableJs v-model:list="demoList" :options="sortableOptions">
+        <template #item="{ element, index }">
+          <div class="list-item">{{ element }} {{ index }}</div>
+        </template>
+      </VueSortableJs>
 
-        <VueSortableJs v-model:list="demoList" :options="sortableOptions">
-          <template #item="{ element, index }">
-            <div class="list-item-shared">{{ element }} {{ index }}</div>
-          </template>
-        </VueSortableJs>
-        
-        export default {
-          components: {
-            VueSortableJs,
-          },
-          setup() {
-            const demoList = ref(["Vue", "Sortable", "Plugin"]);
+      <VueSortableJs v-model:list="demoList" :options="sortableOptions">
+        <template #item="{ element, index }">
+          <div class="list-item-extra">{{ element }} {{ index }}</div>
+        </template>
+      </VueSortableJs>
 
-            const sortableOptions = ref({
-              group: "shared",
-              animation: 150,
-            });
+      <script>
+      export default {
+        components: {
+          VueSortableJs,
+        },
+        setup() {
+          const demoList = ref(["Vue", "Sortable", "Plugin"]);
 
-            return { demoList, sortableOptions };
-          },
-        };
+          const sortableOptions = ref({
+            group: 'shared',
+            animation: 150,
+          });
+
+          return { demoList, sortableOptions };
+        },
+      };
     `;
 
     return { demoList, sortableOptions, code };
